@@ -22,11 +22,11 @@ After configuring the local server and database, the API will already be working
 
 ### Routes
 
-- List users
+- List users (GET)
 /usuarios/listar
 /usuarios/listar/{id}
 
-- Create Users
+- Create Users (POST)
 /usuarios/cadastrar
 
   - json body
@@ -35,7 +35,7 @@ After configuring the local server and database, the API will already be working
 		"senha": "{password}"
 	}
 
-- Update Users
+- Update Users (PUT)
 /usuarios/atualizar/{id}
 
   - json body
@@ -44,5 +44,5 @@ After configuring the local server and database, the API will already be working
 		"senha": "{password}"
 	}
 
-- Delete Users
+- Delete Users (DELETE)
 /usuarios/deletar/{id}
