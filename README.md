@@ -39,27 +39,27 @@ After configuring the local server and database, the API will already be working
 
 ### Routes
 
-- List users (GET)
---/usuarios/listar
---/usuarios/listar/{id}
+- List users (GET)  
+--/usuarios/listar  
+--/usuarios/listar/{id}  
 
-- Create Users (POST)
---/usuarios/cadastrar
+- Create Users (POST)  
+--/usuarios/cadastrar  
 
-  - json body
-	{
-    	"login": "{user}",
-		"senha": "{password}"
-	}
+  - json body  
+	{  
+    		"login": "{user}",  
+		"senha": "{password}"  
+	}  
 
-- Update Users (PUT)
--- /usuarios/atualizar/{id}
+- Update Users (PUT)  
+-- /usuarios/atualizar/{id}  
 
-  - json body
-	{
-		"login": "{user}",
-		"senha": "{password}"
-	}
+  - json body  
+	{  
+		"login": "{user}",  
+		"senha": "{password}"  
+	}  
 
-- Delete Users (DELETE)
---/usuarios/deletar/{id}
+- Delete Users (DELETE)  
+--/usuarios/deletar/{id}  
