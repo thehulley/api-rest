@@ -40,11 +40,11 @@ After configuring the local server and database, the API will already be working
 ### Routes
 
 - List users (GET)  
---/usuarios/listar  
---/usuarios/listar/{id}  
+/usuarios/listar  
+/usuarios/listar/{id}  
 
 - Create Users (POST)  
---/usuarios/cadastrar  
+/usuarios/cadastrar  
 
   - json body  
 	{  
@@ -53,7 +53,7 @@ After configuring the local server and database, the API will already be working
 	}  
 
 - Update Users (PUT)  
--- /usuarios/atualizar/{id}  
+/usuarios/atualizar/{id}  
 
   - json body  
 	{  
@@ -62,4 +62,4 @@ After configuring the local server and database, the API will already be working
 	}  
 
 - Delete Users (DELETE)  
---/usuarios/deletar/{id}  
+/usuarios/deletar/{id}  
