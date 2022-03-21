@@ -1,48 +1,42 @@
-# Api-Rest
+# ApiRest em PHP
+<fig>
+<img src="https://files.tecnoblog.net/wp-content/uploads/2021/01/o_que_e_php_unsplash-700x467.jpg" alt="Um notebook aberto em cima de uma mesa de madeira, um editor de código está aberto no notebook e em cima do teclado está um elefante de pelúcia azul com PHP escrito em seu corpo.">
+</fig>
 
-Api-Rest is a simple project developed during the classes of [Marcos Marcolin](https://github.com/marcosmarcolin) present on his Youtube channel.
+## Tecnologias utilizadas
 
-## Technologies used
+Foram utilizadas as seguintes tecnologias.
 
-- PHP 7.4
+- [PHP](https://www.php.net)
+- [MySQL](https://www.mysql.com)
 
-## How to use
+## Inicialização
+Para executar o projeto, utilize as etapas descritas abaixo.
 
-### Files
+* Clone o repositório do projeto.
+* Execute o `api.sql` no MySQL.
+* Atualize o `bootstrap.php` substituindo o valor de HOST, DB, USER e PASS pelas credenciais do seu banco de dados.
+* Mova os arquivos para local de execução do servidor web.
 
-After cloning the repository, just unzip (if applicable) and move the files to the local server folder and start the server, with the server started you will need to configure the database.
+Após isso o projeto estará rodando :blush:
 
-### Database
+## Links importantes
+* [Marcos Marcolin](https://github.com/marcosmarcolin) :blue_heart:
+* [XAMPP](https://www.apachefriends.org/pt_br/download.html) - Download Xampp, utilizado para executar o código PHP.
 
-The api.sql file contains all the necessary commands for creating the database, just import and run it in phpmyadmin for the database to be created.
+# ApiRest em PHP
 
-### Consumption
+## Introdução
 
-After configuring the local server and database, the API will already be working, so to consume it you will need to access "localhost/api/{routes}" always informing the Bearer token, present in the "tokens_autorizados" table.
+> Este projeto foi desenvolvido durante um minicurso ofertado por Marcos Marcolin em seu canal no YouTube.
 
-### Routes
+Este projeto tem como principal objetivo a criação de uma plataforma para o gerenciamento de usuários.
 
-- List users (GET)  
-/usuarios/listar  
-/usuarios/listar/{id}  
+### Endpoints
 
-- Create Users (POST)  
-/usuarios/cadastrar  
-
-  - json body  
-	{  
-    		"login": "{user}",  
-		"senha": "{password}"  
-	}  
-
-- Update Users (PUT)  
-/usuarios/atualizar/{id}  
-
-  - json body  
-	{  
-		"login": "{user}",  
-		"senha": "{password}"  
-	}  
-
-- Delete Users (DELETE)  
-/usuarios/deletar/{id}  
+| Nome | Funcionalidade|
+|------|---------------|
+|```GET``` /usuarios/listar|Informa o usuário buscado ou todos os usuários cadastrados.|
+|```POST``` /usuarios/cadastrar|Realiza a criação de um usuário.|
+|```PUT``` /usuarios/atualizar/|Atualiza um usuário.|
+|```DELETE``` /usuarios/deletar/|Deleta um usuário.|
